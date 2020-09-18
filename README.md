@@ -12,7 +12,7 @@ This repository holds PyTorch bindings maintained by Intel for the Intel® oneAP
 `torch-ccl` module implements PyTorch C10D ProcessGroup API and can be dynamically loaded as external ProcessGroup.
 
 # Pytorch API Align
-We recommend Anaconda as Python package management system. The following is the corresponding branchs(tags) of torch-ccl and supported Pytorch.
+We recommend Anaconda as Python package management system. The following is the corresponding branchs (tags) of torch-ccl and supported Pytorch.
 
    | ``torch`` | ``torch-ccl`` |  
    | :-----:| :---: |  
@@ -24,23 +24,24 @@ The usage details can be found in the README of corresponding branch. The folloi
 
 # Requirements
 
-PyTorch master.
+PyTorch master branch.
 
 # Installation
 
 To install `torch-ccl`:
 
-1. Install PyTorch.
+1. Install [PyTorch](https://github.com/pytorch/pytorch) from source code.
 
 2. Install the `torch-ccl`.
 
 ```bash
+ git clone https://github.com/intel/torch-ccl.git && cd torch-ccl 
  git submodule sync 
  git submodule update --init --recursive 
  python setup.py install
 ```
 
-3. Source the oneCCL environment.
+3. oneCCL is used as third party repo of torch-ccl but you need to source the oneCCL environment before runing.
 
 ```
 $ torch_ccl_path=$(python -c "import torch; import torch_ccl; import os;  print(os.path.abspath(os.path.dirname(torch_ccl.__file__)))")
