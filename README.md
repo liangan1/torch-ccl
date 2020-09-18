@@ -14,11 +14,11 @@ This repository holds PyTorch bindings maintained by Intel for the Intel® oneAP
 # Pytorch API Align
 We recommend Anaconda as Python package management system. The following is the corresponding branchs(tags) of torch-ccl and supported Pytorch.
 
-| ``torch`` | ``torchvision`` |  
-| :-----:| :---: |  
-|  ``master`` |  ``master``  |
-|  ````1.6.0```` |  [ccl_torch1.6](https://github.com/intel/torch-ccl/tree/ccl_torch1.6)   | 
-|  ``1.5-rc3`` |   [beta09](https://github.com/intel/torch-ccl/tree/beta09)   |
+   | ``torch`` | ``torch-ccl`` |  
+   | :-----:| :---: |  
+   |  ``master`` |  ``master``  |
+   | [v1.6.0](https://github.com/pytorch/pytorch/tree/v1.6.0) |  [ccl_torch1.6](https://github.com/intel/torch-ccl/tree/ccl_torch1.6)   | 
+   | [v1.5-rc3](https://github.com/pytorch/pytorch/tree/v1.5.0-rc3) |   [beta09](https://github.com/intel/torch-ccl/tree/beta09)   |
 
 The usage details can be found in the README of corresponding branch. The folloing part is about the usage of master. if you want to use other version of torch-ccl please checkout to that branch(tag).
 
