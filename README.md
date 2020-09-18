@@ -9,7 +9,7 @@ This repository holds PyTorch bindings maintained by Intel for the Intel® oneAP
 
 [Intel® oneCCL](https://github.com/oneapi-src/oneCCL) (collective commnications library) is a library for efficient distributed deep learning training implementing such collectives like allreduce, allgather, alltoall. For more information on oneCCL, please refer to the [oneCCL documentation](https://oneapi-src.github.io/oneCCL).
 
-`torch-ccl` module implements PyTorch C10D ProcessGroup API and can be dynamically loaded as external ProcessGroup.
+`torch-ccl` module implements PyTorch C10D ProcessGroup API and can be dynamically loaded as external ProcessGroup and only works on Linux platform now.
 
 # Pytorch API Align
 We recommend Anaconda as Python package management system. The following is the corresponding branchs (tags) of torch-ccl and supported Pytorch.
@@ -23,6 +23,8 @@ We recommend Anaconda as Python package management system. The following is the 
 The usage details can be found in the README of corresponding branch. The folloing part is about the usage of master. if you want to use other version of torch-ccl please checkout to that branch(tag).
 
 # Requirements
+
+Python 3.6 or later and a C++14 compiler
 
 PyTorch master branch.
 
